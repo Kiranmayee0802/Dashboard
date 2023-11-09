@@ -1,0 +1,43 @@
+{% load static %}
+<div class="d-flex align-items-stretch">
+    <!-- Sidebar Navigation-->
+    <nav id="sidebar">
+      <!-- Sidebar Header-->
+      <div class="sidebar-header d-flex align-items-center">
+        <div class="avatar"><img src="{% static 'img/avatar-6.jpg' %}" alt="..." class="img-fluid rounded-circle"></div>
+        <div class="title">
+          <h1 class="h5">Admin</h1>
+          <p>Web Designer</p>
+        </div>
+        <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+      </div>
+      <!-- Sidebar Navidation Menus-->
+      <!-- <span class="heading">Main</span> -->
+      <ul class="list-unstyled">
+              <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+              
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Companies</a>
+                <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                  <li><a href="#">Add New</a></li>
+                  <li><a href="#">Update</a></li>
+                  <li><a href="show">View</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Employees</a>
+                <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                  <li><a href="addemp">Add New</a></li>
+                  <li><a href="editemp">Update</a></li>
+                  <li><a href="showemp">View</a></li>
+                </ul>
+              </li>
+
+              <li><a href="showemp"> <i class="icon-grid"></i>Attendance</a></li>
+              <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Salary Details</a></li>
+              
+              
+              <li><a href="login.html"> <i class="icon-logout"></i>LogOut </a></li>
+      </ul>
+      
+    </nav>
+  
